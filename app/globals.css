@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #fafafa;
+  --text: #1a1a1a;
+  --accent: #c5a358;
+}
+
+html,
+body {
+  background: radial-gradient(circle at top left, #ffffff 0%, #fafafa 45%, #f4f1eb 100%);
+  color: var(--text);
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.luxury-container {
+  @apply mx-auto max-w-7xl px-5 sm:px-8 lg:px-10;
+}
+
+.section-title {
+  @apply text-3xl font-semibold tracking-tight text-charcoal sm:text-4xl;
+}
+
+.section-kicker {
+  @apply text-xs font-semibold uppercase tracking-[0.35em] text-sand;
+}
+
+.shimmer-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -130%;
+  width: 70%;
+  height: 100%;
+  background: linear-gradient(110deg, transparent 0%, rgba(255, 255, 255, 0.45) 45%, transparent 100%);
+  transform: skewX(-18deg);
+  animation: shimmer 2.7s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    left: -130%;
+  }
+  100% {
+    left: 180%;
+  }
+}
+
+.compare-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 34px;
+  height: 34px;
+  border-radius: 9999px;
+  border: 2px solid #1a1a1a;
+  background: #c5a358;
+  cursor: ew-resize;
+}
+
+.compare-range::-moz-range-thumb {
+  width: 34px;
+  height: 34px;
+  border-radius: 9999px;
+  border: 2px solid #1a1a1a;
+  background: #c5a358;
+  cursor: ew-resize;
+}

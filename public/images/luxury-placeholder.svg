@@ -1,0 +1,18 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1000" fill="#1A1A1A"/>
+  <rect x="64" y="64" width="1472" height="872" rx="28" fill="url(#paint0_linear)" stroke="#C5A358" stroke-width="3"/>
+  <path d="M120 736C273 624 411 640 544 704C688 773 804 804 964 725C1138 640 1295 656 1480 780V936H120V736Z" fill="#C5A358" fill-opacity="0.18"/>
+  <circle cx="362" cy="346" r="112" fill="#C5A358" fill-opacity="0.2"/>
+  <text x="800" y="470" text-anchor="middle" fill="#F7F1E4" font-size="78" font-family="Georgia, serif" font-weight="700">
+    Desert Horizon Contracting
+  </text>
+  <text x="800" y="544" text-anchor="middle" fill="#F7F1E4" font-size="34" font-family="Arial, sans-serif">
+    Luxury Construction Crafted in Dubai
+  </text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="64" y1="64" x2="1536" y2="936" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#232323"/>
+      <stop offset="1" stop-color="#151515"/>
+    </linearGradient>
+  </defs>
+</svg>
