@@ -6,7 +6,7 @@ import SafeImage from "./SafeImage";
 const paragraphs = [
   "For over 20 years, Desert Horizon Contracting has delivered premium construction and exterior transformations across the UAE, combining regional heritage with modern design intelligence.",
   "As a family-owned firm, we work with hands-on precision at every phase, from concept alignment to final handover, ensuring every finish reflects boutique-level craftsmanship.",
-  "Our mission is simple: transform ordinary properties into signature lifestyle spaces through elegant engineering, disciplined project delivery, and timeless material quality."
+  "Our mission is simple: transform ordinary properties into signature lifestyle spaces through elegant engineering, disciplined project delivery, and timeless material quality.",
 ];
 
 export default function AboutUs() {
@@ -64,12 +64,20 @@ export default function AboutUs() {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="rounded-2xl border border-charcoal/10 bg-charcoal p-5 text-offwhite shadow-luxury">
-                <p className="text-xs uppercase tracking-[0.22em] text-sand">Projects Delivered</p>
-                <p className="mt-2 font-[var(--font-playfair)] text-3xl">300+</p>
+                <p className="text-xs uppercase tracking-[0.22em] text-sand">
+                  Projects Delivered
+                </p>
+                <p className="mt-2 font-[var(--font-playfair)] text-3xl">
+                  300+
+                </p>
               </div>
               <div className="rounded-2xl border border-sand/25 bg-gradient-to-br from-white to-[#f7f1e4] p-5 shadow-luxury">
-                <p className="text-xs uppercase tracking-[0.22em] text-charcoal/65">Client Retention</p>
-                <p className="mt-2 font-[var(--font-playfair)] text-3xl text-sand">92%</p>
+                <p className="text-xs uppercase tracking-[0.22em] text-charcoal/65">
+                  Client Retention
+                </p>
+                <p className="mt-2 font-[var(--font-playfair)] text-3xl text-sand">
+                  92%
+                </p>
               </div>
             </div>
           </motion.div>

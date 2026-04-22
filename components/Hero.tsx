@@ -35,9 +35,11 @@ export default function Hero() {
             Ready to Extend Your Home? Let&apos;s Talk
           </h1>
           <p className="mt-5 max-w-2xl text-base text-offwhite/85 sm:text-lg">
-            <span className="font-extrabold text-offwhite">Desert Horizon Contracting</span> crafts
-            elevated outdoor living spaces, premium pools, and signature lifestyle developments for
-            private clients across the UAE.
+            <span className="font-extrabold text-offwhite">
+              Desert Horizon Contracting
+            </span>{" "}
+            crafts elevated outdoor living spaces, premium pools, and signature
+            lifestyle developments for private clients across the UAE.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <a

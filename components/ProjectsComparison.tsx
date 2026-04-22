@@ -13,37 +13,55 @@ type Project = {
 const projects: Project[] = [
   {
     title: "Palm Villa Courtyard",
-    before: "https://images.unsplash.com/photo-1464146072230-91cabc968266?auto=format&fm=webp&q=85&w=1600",
-    after: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fm=webp&q=85&w=1600"
+    before:
+      "https://images.unsplash.com/photo-1464146072230-91cabc968266?auto=format&fm=webp&q=85&w=1600",
+    after:
+      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fm=webp&q=85&w=1600",
   },
   {
     title: "Al Barsha Poolscape",
-    before: "https://images.unsplash.com/photo-1560185008-b033106af5c3?auto=format&fm=webp&q=85&w=1600",
-    after: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fm=webp&q=85&w=1600"
+    before:
+      "https://images.unsplash.com/photo-1560185008-b033106af5c3?auto=format&fm=webp&q=85&w=1600",
+    after:
+      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fm=webp&q=85&w=1600",
   },
   {
     title: "Padel Court Compound",
-    before: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fm=webp&q=85&w=1600",
-    after: "https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?auto=format&fm=webp&q=85&w=1600"
+    before:
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fm=webp&q=85&w=1600",
+    after:
+      "https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?auto=format&fm=webp&q=85&w=1600",
   },
   {
     title: "Ajman Garden Upgrade",
-    before: "https://images.unsplash.com/photo-1628624747186-a941c476b7ef?auto=format&fm=webp&q=85&w=1600",
-    after: "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fm=webp&q=85&w=1600"
+    before:
+      "https://images.unsplash.com/photo-1628624747186-a941c476b7ef?auto=format&fm=webp&q=85&w=1600",
+    after:
+      "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fm=webp&q=85&w=1600",
   },
   {
     title: "Sharjah Facade Renewal",
-    before: "https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fm=webp&q=85&w=1600",
-    after: "https://images.unsplash.com/photo-1600585154084-4e5fe7c39198?auto=format&fm=webp&q=85&w=1600"
+    before:
+      "https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fm=webp&q=85&w=1600",
+    after:
+      "https://images.unsplash.com/photo-1600585154084-4e5fe7c39198?auto=format&fm=webp&q=85&w=1600",
   },
   {
     title: "Meydan Outdoor Lounge",
-    before: "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?auto=format&fm=webp&q=85&w=1600",
-    after: "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fm=webp&q=85&w=1600"
-  }
+    before:
+      "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?auto=format&fm=webp&q=85&w=1600",
+    after:
+      "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fm=webp&q=85&w=1600",
+  },
 ];
 
-function ComparisonCard({ project, index }: { project: Project; index: number }) {
+function ComparisonCard({
+  project,
+  index,
+}: {
+  project: Project;
+  index: number;
+}) {
   const [position, setPosition] = useState(50);
 
   return (
@@ -54,7 +72,9 @@ function ComparisonCard({ project, index }: { project: Project; index: number })
       transition={{ duration: 0.6, delay: index * 0.05 }}
       className="rounded-2xl border border-charcoal/10 bg-white p-4 shadow-luxury"
     >
-      <h3 className="mb-4 font-[var(--font-playfair)] text-2xl text-charcoal">{project.title}</h3>
+      <h3 className="mb-4 font-[var(--font-playfair)] text-2xl text-charcoal">
+        {project.title}
+      </h3>
 
       <div className="relative aspect-[16/10] overflow-hidden rounded-xl border border-charcoal/10">
         <SafeImage
@@ -66,7 +86,10 @@ function ComparisonCard({ project, index }: { project: Project; index: number })
           className="object-cover"
         />
 
-        <div className="absolute inset-y-0 left-0 overflow-hidden" style={{ width: `${position}%` }}>
+        <div
+          className="absolute inset-y-0 left-0 overflow-hidden"
+          style={{ width: `${position}%` }}
+        >
           <div className="relative h-full w-full">
             <SafeImage
               src={project.after}
@@ -123,12 +146,18 @@ export default function ProjectsComparison() {
           className="max-w-3xl"
         >
           <p className="section-kicker">Our Projects</p>
-          <h2 className="section-title mt-4 font-[var(--font-playfair)]">Before and After Transformation Stories</h2>
+          <h2 className="section-title mt-4 font-[var(--font-playfair)]">
+            Before and After Transformation Stories
+          </h2>
         </motion.div>
 
         <div className="mt-10 grid gap-6 lg:grid-cols-2">
           {projects.map((project, index) => (
-            <ComparisonCard key={project.title} project={project} index={index} />
+            <ComparisonCard
+              key={project.title}
+              project={project}
+              index={index}
+            />
           ))}
         </div>
       </div>

@@ -39,12 +39,16 @@ export default function Home() {
                 Premium Construction Since 2003
               </h3>
               <p className="mt-4 max-w-xl text-sm leading-relaxed text-offwhite/80 sm:text-base">
-                We design and build private pools, landscaped gardens, pergolas, and luxury outdoor living
-                spaces for homes and hospitality projects across the UAE.
+                We design and build private pools, landscaped gardens, pergolas,
+                and luxury outdoor living spaces for homes and hospitality
+                projects across the UAE.
               </p>
               <div className="mt-6 flex flex-wrap gap-2 text-xs font-semibold uppercase tracking-[0.16em]">
                 {["Dubai", "Sharjah", "Ajman"].map((city) => (
-                  <span key={city} className="rounded-full border border-sand/40 px-3 py-1 text-sand">
+                  <span
+                    key={city}
+                    className="rounded-full border border-sand/40 px-3 py-1 text-sand"
+                  >
                     {city}
                   </span>
                 ))}
@@ -52,14 +56,16 @@ export default function Home() {
             </div>
 
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.25em] text-sand/90">Quick Links</p>
+              <p className="text-xs font-semibold uppercase tracking-[0.25em] text-sand/90">
+                Quick Links
+              </p>
               <ul className="mt-4 space-y-2 text-sm text-offwhite/85">
                 {[
                   { label: "About Us", href: "#about" },
                   { label: "Services", href: "#services" },
                   { label: "Projects", href: "#projects" },
                   { label: "Why Choose Us", href: "#why-us" },
-                  { label: "Contact", href: "#contact" }
+                  { label: "Contact", href: "#contact" },
                 ].map((link) => (
                   <li key={link.href}>
                     <a className="transition hover:text-sand" href={link.href}>
@@ -71,7 +77,9 @@ export default function Home() {
             </div>
 
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.25em] text-sand/90">Contact Details</p>
+              <p className="text-xs font-semibold uppercase tracking-[0.25em] text-sand/90">
+                Contact Details
+              </p>
               <div className="mt-4 space-y-4">
                 <a
                   href="tel:+971552699742"
@@ -81,8 +89,12 @@ export default function Home() {
                     <Phone size={16} />
                   </span>
                   <span>
-                    <span className="block text-xs uppercase tracking-[0.18em] text-sand/90">Phone</span>
-                    <span className="text-sm text-offwhite/90">+971 55 269 9742</span>
+                    <span className="block text-xs uppercase tracking-[0.18em] text-sand/90">
+                      Phone
+                    </span>
+                    <span className="text-sm text-offwhite/90">
+                      +971 55 269 9742
+                    </span>
                   </span>
                 </a>
 
@@ -94,8 +106,12 @@ export default function Home() {
                     <Smartphone size={16} />
                   </span>
                   <span>
-                    <span className="block text-xs uppercase tracking-[0.18em] text-sand/90">WhatsApp</span>
-                    <span className="text-sm text-offwhite/90">+971 55 269 9742</span>
+                    <span className="block text-xs uppercase tracking-[0.18em] text-sand/90">
+                      WhatsApp
+                    </span>
+                    <span className="text-sm text-offwhite/90">
+                      +971 55 269 9742
+                    </span>
                   </span>
                 </a>
 
@@ -107,8 +123,12 @@ export default function Home() {
                     <Mail size={16} />
                   </span>
                   <span>
-                    <span className="block text-xs uppercase tracking-[0.18em] text-sand/90">Email</span>
-                    <span className="text-sm text-offwhite/90">info@deserthorizon.ae</span>
+                    <span className="block text-xs uppercase tracking-[0.18em] text-sand/90">
+                      Email
+                    </span>
+                    <span className="text-sm text-offwhite/90">
+                      info@deserthorizon.ae
+                    </span>
                   </span>
                 </a>
 
@@ -117,8 +137,12 @@ export default function Home() {
                     <MapPin size={16} />
                   </span>
                   <span>
-                    <span className="block text-xs uppercase tracking-[0.18em] text-sand/90">Location</span>
-                    <span className="text-sm text-offwhite/90">Dubai, United Arab Emirates</span>
+                    <span className="block text-xs uppercase tracking-[0.18em] text-sand/90">
+                      Location
+                    </span>
+                    <span className="text-sm text-offwhite/90">
+                      Dubai, United Arab Emirates
+                    </span>
                   </span>
                 </div>
               </div>
@@ -133,4 +157,3 @@ export default function Home() {
     </>
   );
 }
-

@@ -1,39 +1,52 @@
 "use client";
 
-import { Banknote, Clock, Gem, Settings, ShieldCheck, Users } from "lucide-react";
+import {
+  Banknote,
+  Clock,
+  Gem,
+  Settings,
+  ShieldCheck,
+  Users,
+} from "lucide-react";
 import { motion } from "framer-motion";
 
 const reasons = [
   {
     title: "Dedicated Team",
-    description: "A committed in-house team coordinating design, execution, and delivery with one accountable voice.",
-    icon: Users
+    description:
+      "A committed in-house team coordinating design, execution, and delivery with one accountable voice.",
+    icon: Users,
   },
   {
     title: "Budget Clarity",
-    description: "Transparent commercial planning with smart material options and milestone-based cost visibility.",
-    icon: Banknote
+    description:
+      "Transparent commercial planning with smart material options and milestone-based cost visibility.",
+    icon: Banknote,
   },
   {
     title: "On-Time Delivery",
-    description: "Practical schedules with disciplined site control to keep luxury projects moving on time.",
-    icon: Clock
+    description:
+      "Practical schedules with disciplined site control to keep luxury projects moving on time.",
+    icon: Clock,
   },
   {
     title: "Technical Precision",
-    description: "Engineering-led execution supported by detailed planning, supervision, and QA checkpoints.",
-    icon: Settings
+    description:
+      "Engineering-led execution supported by detailed planning, supervision, and QA checkpoints.",
+    icon: Settings,
   },
   {
     title: "Compliance Confidence",
-    description: "Permit and authority-conscious workflows aligned with Dubai standards and safety requirements.",
-    icon: ShieldCheck
+    description:
+      "Permit and authority-conscious workflows aligned with Dubai standards and safety requirements.",
+    icon: ShieldCheck,
   },
   {
     title: "Luxury Finish",
-    description: "Boutique craftsmanship focused on refined details, premium materials, and lasting elegance.",
-    icon: Gem
-  }
+    description:
+      "Boutique craftsmanship focused on refined details, premium materials, and lasting elegance.",
+    icon: Gem,
+  },
 ];
 
 export default function WhyChooseUs() {
@@ -47,7 +60,9 @@ export default function WhyChooseUs() {
         className="max-w-3xl"
       >
         <p className="section-kicker">Why Choose Us</p>
-        <h2 className="section-title mt-4 font-[var(--font-playfair)]">Built on Trust, Precision, and Luxury Standards</h2>
+        <h2 className="section-title mt-4 font-[var(--font-playfair)]">
+          Built on Trust, Precision, and Luxury Standards
+        </h2>
       </motion.div>
 
       <div className="mt-10 grid gap-5 lg:grid-cols-3">
@@ -64,8 +79,12 @@ export default function WhyChooseUs() {
             <div className="inline-flex rounded-full border border-sand/35 bg-sand/10 p-3 transition group-hover:bg-sand/20">
               <Icon size={24} className="text-sand" />
             </div>
-            <h3 className="mt-4 font-[var(--font-playfair)] text-2xl text-charcoal">{title}</h3>
-            <p className="mt-3 text-sm leading-relaxed text-charcoal/75">{description}</p>
+            <h3 className="mt-4 font-[var(--font-playfair)] text-2xl text-charcoal">
+              {title}
+            </h3>
+            <p className="mt-3 text-sm leading-relaxed text-charcoal/75">
+              {description}
+            </p>
           </motion.article>
         ))}
       </div>

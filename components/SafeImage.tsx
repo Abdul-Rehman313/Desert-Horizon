@@ -15,7 +15,17 @@ export default function SafeImage({
   ...props
 }: SafeImageProps) {
   const [hasError, setHasError] = useState(false);
-  const resolvedSrc = useMemo(() => (hasError ? fallbackSrc : src), [fallbackSrc, hasError, src]);
+  const resolvedSrc = useMemo(
+    () => (hasError ? fallbackSrc : src),
+    [fallbackSrc, hasError, src],
+  );
 
-  return <Image {...props} src={resolvedSrc} alt={alt} onError={() => setHasError(true)} />;
+  return (
+    <Image
+      {...props}
+      src={resolvedSrc}
+      alt={alt}
+      onError={() => setHasError(true)}
+    />
+  );
 }

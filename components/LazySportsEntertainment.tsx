@@ -9,7 +9,7 @@ const SportsEntertainment = dynamic(() => import("./SportsEntertainment"), {
     <section className="luxury-container py-20 sm:py-24">
       <div className="h-44 animate-pulse rounded-2xl border border-sand/30 bg-white/70" />
     </section>
-  )
+  ),
 });
 
 export default function LazySportsEntertainment() {
@@ -26,7 +26,7 @@ export default function LazySportsEntertainment() {
         setShouldRender(true);
         observer.disconnect();
       },
-      { rootMargin: "300px 0px" }
+      { rootMargin: "300px 0px" },
     );
 
     observer.observe(target);

@@ -8,31 +8,34 @@ const offerings = [
     title: "Tennis & Padel Courts",
     image:
       "https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?auto=format&fm=webp&q=85&w=1400",
-    alt: "Padel tennis court construction"
+    alt: "Padel tennis court construction",
   },
   {
     title: "Football Courts",
     image:
       "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?auto=format&fm=webp&q=85&w=1400",
-    alt: "Private football field with artificial turf"
+    alt: "Private football field with artificial turf",
   },
   {
     title: "Integrated Sound Systems",
     image:
       "https://images.unsplash.com/photo-1520170350707-b2da59970118?auto=format&fm=webp&q=85&w=1400",
-    alt: "Outdoor entertainment sound system"
+    alt: "Outdoor entertainment sound system",
   },
   {
     title: "Private Zoos",
     image:
       "https://images.unsplash.com/photo-1547721064-da6cfb341d50?auto=format&fm=webp&q=85&w=1400",
-    alt: "Specialized landscaping for private zoo enclosures"
-  }
+    alt: "Specialized landscaping for private zoo enclosures",
+  },
 ];
 
 export default function SportsEntertainment() {
   return (
-    <section className="luxury-container py-20 sm:py-24" id="sports-entertainment">
+    <section
+      className="luxury-container py-20 sm:py-24"
+      id="sports-entertainment"
+    >
       <div className="max-w-3xl">
         <p className="section-kicker">Sports & Entertainment</p>
         <h2 className="section-title mt-4 font-[var(--font-playfair)]">
@@ -60,7 +63,9 @@ export default function SportsEntertainment() {
               />
             </div>
             <div className="bg-charcoal px-5 py-4">
-              <h3 className="font-[var(--font-playfair)] text-xl text-offwhite">{item.title}</h3>
+              <h3 className="font-[var(--font-playfair)] text-xl text-offwhite">
+                {item.title}
+              </h3>
             </div>
           </motion.article>
         ))}

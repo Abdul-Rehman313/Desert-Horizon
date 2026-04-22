@@ -10,7 +10,12 @@
 
 html,
 body {
-  background: radial-gradient(circle at top left, #ffffff 0%, #fafafa 45%, #f4f1eb 100%);
+  background: radial-gradient(
+    circle at top left,
+    #ffffff 0%,
+    #fafafa 45%,
+    #f4f1eb 100%
+  );
   color: var(--text);
   scroll-behavior: smooth;
 }
@@ -43,7 +48,12 @@ body {
   left: -130%;
   width: 70%;
   height: 100%;
-  background: linear-gradient(110deg, transparent 0%, rgba(255, 255, 255, 0.45) 45%, transparent 100%);
+  background: linear-gradient(
+    110deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.45) 45%,
+    transparent 100%
+  );
   transform: skewX(-18deg);
   animation: shimmer 2.7s infinite;
 }

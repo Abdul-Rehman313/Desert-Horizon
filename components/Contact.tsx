@@ -13,9 +13,7 @@ export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [phone, setPhone] = useState("");
   const [toast, setToast] = useState<ToastState>(null);
-  const webAppUrl =
-    process.env.NEXT_PUBLIC_GOOGLE_SHEET_WEB_APP_URL ||
-    "https://script.google.com/macros/s/AKfycbxDMs1xXJVH17hjMKA-c9suxJ_6OyD56U_C-LWhnAAncVcUz8LWum78jT-xzUdYsSib/exec";
+  const webAppUrl = process.env.NEXT_PUBLIC_GOOGLE_SHEET_WEB_APP_URL;
 
   useEffect(() => {
     if (!toast) {
@@ -33,10 +31,10 @@ export default function Contact() {
     event.preventDefault();
     const form = event.currentTarget;
 
-    if (webAppUrl === "YOUR_WEB_APP_URL") {
+    if (webAppUrl === "" || webAppUrl === undefined) {
       setToast({
         type: "error",
-        message: "Please set NEXT_PUBLIC_GOOGLE_SHEET_WEB_APP_URL first.",
+        message: "Please Contact the developer. Missing Google Sheet Web App.",
       });
       return;
     }
@@ -77,7 +75,8 @@ export default function Contact() {
       setPhone("");
       setToast({
         type: "success",
-        message: "Inquiry submitted successfully. Our team will contact you soon.",
+        message:
+          "Inquiry submitted successfully. Our team will contact you soon.",
       });
     } catch {
       setToast({
@@ -211,7 +210,9 @@ export default function Contact() {
               ) : (
                 <AlertCircle className="mt-0.5 h-5 w-5 shrink-0" />
               )}
-              <p className="text-sm font-medium leading-relaxed">{toast.message}</p>
+              <p className="text-sm font-medium leading-relaxed">
+                {toast.message}
+              </p>
             </div>
           </motion.div>
         ) : null}
