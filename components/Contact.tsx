@@ -13,7 +13,10 @@ export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [phone, setPhone] = useState("");
   const [toast, setToast] = useState<ToastState>(null);
-  const webAppUrl = process.env.NEXT_PUBLIC_GOOGLE_SHEET_WEB_APP_URL;
+  const webAppUrl =
+    process.env.NEXT_PUBLIC_GOOGLE_SHEET_WEB_APP_URL ||
+    "https://script.google.com/macros/s/AKfycbxDMs1xXJVH17hjMKA-c9suxJ_6OyD56U_C-LWhnAAncVcUz8LWum78jT-xzUdYsSib/exec";
+  console.log(webAppUrl);
 
   useEffect(() => {
     if (!toast) {
