@@ -8,9 +8,9 @@ export default function ServiceAreas() {
             Serving Dubai, Sharjah, and Ajman
           </h2>
           <p className="mt-4 max-w-2xl text-sm leading-relaxed text-offwhite/80 sm:text-base">
-            Our teams execute end-to-end outdoor and lifestyle projects for
-            discerning homeowners, developers, and hospitality clients across
-            the UAE’s key northern hubs.
+            Our teams execute end-to-end outdoor and lifestyle projects for discerning
+            homeowners, developers, and hospitality clients across the UAE&apos;s key
+            northern hubs.
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
             {["Dubai", "Sharjah", "Ajman"].map((city) => (

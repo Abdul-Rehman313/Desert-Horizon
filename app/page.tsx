@@ -39,9 +39,9 @@ export default function Home() {
                 Premium Construction Since 2003
               </h3>
               <p className="mt-4 max-w-xl text-sm leading-relaxed text-offwhite/80 sm:text-base">
-                We design and build private pools, landscaped gardens, pergolas,
-                and luxury outdoor living spaces for homes and hospitality
-                projects across the UAE.
+                We design and build private pools, landscaped gardens, pergolas, and
+                luxury outdoor living spaces for homes and hospitality projects across the
+                UAE.
               </p>
               <div className="mt-6 flex flex-wrap gap-2 text-xs font-semibold uppercase tracking-[0.16em]">
                 {["Dubai", "Sharjah", "Ajman"].map((city) => (
@@ -92,9 +92,7 @@ export default function Home() {
                     <span className="block text-xs uppercase tracking-[0.18em] text-sand/90">
                       Phone
                     </span>
-                    <span className="text-sm text-offwhite/90">
-                      +971 55 269 9742
-                    </span>
+                    <span className="text-sm text-offwhite/90">+971 55 269 9742</span>
                   </span>
                 </a>
 
@@ -109,9 +107,7 @@ export default function Home() {
                     <span className="block text-xs uppercase tracking-[0.18em] text-sand/90">
                       WhatsApp
                     </span>
-                    <span className="text-sm text-offwhite/90">
-                      +971 55 269 9742
-                    </span>
+                    <span className="text-sm text-offwhite/90">+971 55 269 9742</span>
                   </span>
                 </a>
 

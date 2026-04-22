@@ -10,12 +10,7 @@
 
 html,
 body {
-  background: radial-gradient(
-    circle at top left,
-    #ffffff 0%,
-    #fafafa 45%,
-    #f4f1eb 100%
-  );
+  background: radial-gradient(circle at top left, #ffffff 0%, #fafafa 45%, #f4f1eb 100%);
   color: var(--text);
   scroll-behavior: smooth;
 }

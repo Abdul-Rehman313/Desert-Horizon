@@ -32,10 +32,7 @@ const offerings = [
 
 export default function SportsEntertainment() {
   return (
-    <section
-      className="luxury-container py-20 sm:py-24"
-      id="sports-entertainment"
-    >
+    <section className="luxury-container py-20 sm:py-24" id="sports-entertainment">
       <div className="max-w-3xl">
         <p className="section-kicker">Sports & Entertainment</p>
         <h2 className="section-title mt-4 font-[var(--font-playfair)]">

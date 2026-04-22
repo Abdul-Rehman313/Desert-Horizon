@@ -38,8 +38,8 @@ export default function Hero() {
             <span className="font-extrabold text-offwhite">
               Desert Horizon Contracting
             </span>{" "}
-            crafts elevated outdoor living spaces, premium pools, and signature
-            lifestyle developments for private clients across the UAE.
+            crafts elevated outdoor living spaces, premium pools, and signature lifestyle
+            developments for private clients across the UAE.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <a

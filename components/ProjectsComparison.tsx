@@ -55,13 +55,7 @@ const projects: Project[] = [
   },
 ];
 
-function ComparisonCard({
-  project,
-  index,
-}: {
-  project: Project;
-  index: number;
-}) {
+function ComparisonCard({ project, index }: { project: Project; index: number }) {
   const [position, setPosition] = useState(50);
 
   return (
@@ -153,11 +147,7 @@ export default function ProjectsComparison() {
 
         <div className="mt-10 grid gap-6 lg:grid-cols-2">
           {projects.map((project, index) => (
-            <ComparisonCard
-              key={project.title}
-              project={project}
-              index={index}
-            />
+            <ComparisonCard key={project.title} project={project} index={index} />
           ))}
         </div>
       </div>

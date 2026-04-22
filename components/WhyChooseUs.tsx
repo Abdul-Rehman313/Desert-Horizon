@@ -1,13 +1,6 @@
 "use client";
 
-import {
-  Banknote,
-  Clock,
-  Gem,
-  Settings,
-  ShieldCheck,
-  Users,
-} from "lucide-react";
+import { Banknote, Clock, Gem, Settings, ShieldCheck, Users } from "lucide-react";
 import { motion } from "framer-motion";
 
 const reasons = [
@@ -82,9 +75,7 @@ export default function WhyChooseUs() {
             <h3 className="mt-4 font-[var(--font-playfair)] text-2xl text-charcoal">
               {title}
             </h3>
-            <p className="mt-3 text-sm leading-relaxed text-charcoal/75">
-              {description}
-            </p>
+            <p className="mt-3 text-sm leading-relaxed text-charcoal/75">{description}</p>
           </motion.article>
         ))}
       </div>

@@ -58,10 +58,7 @@ export default function Testimonials() {
   }, []);
 
   return (
-    <section
-      id="testimonials"
-      className="bg-charcoal py-20 text-offwhite sm:py-24"
-    >
+    <section id="testimonials" className="bg-charcoal py-20 text-offwhite sm:py-24">
       <div className="luxury-container">
         <div className="max-w-3xl">
           <p className="section-kicker">Testimonials</p>
@@ -80,7 +77,7 @@ export default function Testimonials() {
               transition={{ duration: 0.35 }}
             >
               <blockquote className="max-w-4xl font-[var(--font-playfair)] text-xl leading-relaxed text-offwhite sm:text-2xl">
-                "{testimonials[active].text}"
+                &ldquo;{testimonials[active].text}&rdquo;
               </blockquote>
               <figcaption className="mt-6 text-sm font-semibold uppercase tracking-[0.18em] text-sand">
                 {testimonials[active].name}

@@ -13,10 +13,7 @@ export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [phone, setPhone] = useState("");
   const [toast, setToast] = useState<ToastState>(null);
-  const webAppUrl =
-    process.env.NEXT_PUBLIC_GOOGLE_SHEET_WEB_APP_URL ||
-    "https://script.google.com/macros/s/AKfycbxDMs1xXJVH17hjMKA-c9suxJ_6OyD56U_C-LWhnAAncVcUz8LWum78jT-xzUdYsSib/exec";
-  console.log(webAppUrl);
+  const webAppUrl = process.env.NEXT_PUBLIC_GOOGLE_SHEET_WEB_APP_URL?.trim();
 
   useEffect(() => {
     if (!toast) {
@@ -34,10 +31,11 @@ export default function Contact() {
     event.preventDefault();
     const form = event.currentTarget;
 
-    if (webAppUrl === "" || webAppUrl === undefined) {
+    if (!webAppUrl) {
       setToast({
         type: "error",
-        message: "Please Contact the developer. Missing Google Sheet Web App.",
+        message:
+          "Form is unavailable right now. Please contact support to configure the endpoint.",
       });
       return;
     }
@@ -47,7 +45,7 @@ export default function Contact() {
     const sanitizedPhone = String(formData.get("phone") || "")
       .replace(/\D/g, "")
       .trim();
-    const serviceIntrest = String(formData.get("serviceIntrest") || "").trim();
+    const serviceInterest = String(formData.get("serviceInterest") || "").trim();
     const projectBrief = String(formData.get("projectBrief") || "").trim();
 
     if (!sanitizedPhone) {
@@ -69,7 +67,9 @@ export default function Contact() {
         body: JSON.stringify({
           name,
           phone: sanitizedPhone,
-          serviceIntrest,
+          serviceInterest,
+          // Keeping legacy key for compatibility with existing Google Apps Script mapping.
+          serviceIntrest: serviceInterest,
           projectBrief,
         }),
       });
@@ -78,8 +78,7 @@ export default function Contact() {
       setPhone("");
       setToast({
         type: "success",
-        message:
-          "Inquiry submitted successfully. Our team will contact you soon.",
+        message: "Inquiry submitted successfully. Our team will contact you soon.",
       });
     } catch {
       setToast({
@@ -106,9 +105,8 @@ export default function Contact() {
             Let&apos;s Build Your Vision
           </h2>
           <p className="mt-4 text-sm leading-relaxed text-charcoal/75">
-            Share your project brief and preferred style direction. Our team
-            will schedule a private consultation with design and execution
-            specialists.
+            Share your project brief and preferred style direction. Our team will schedule
+            a private consultation with design and execution specialists.
           </p>
           <a
             href="tel:0552699742"
@@ -159,7 +157,7 @@ export default function Contact() {
           <label className="mt-4 block text-sm font-medium text-charcoal">
             Service Interest
             <select
-              name="serviceIntrest"
+              name="serviceInterest"
               required
               className="mt-2 w-full rounded-xl border border-charcoal/20 bg-white px-4 py-3 text-sm outline-none ring-sand/30 transition focus:ring-4"
               defaultValue=""
@@ -213,9 +211,7 @@ export default function Contact() {
               ) : (
                 <AlertCircle className="mt-0.5 h-5 w-5 shrink-0" />
               )}
-              <p className="text-sm font-medium leading-relaxed">
-                {toast.message}
-              </p>
+              <p className="text-sm font-medium leading-relaxed">{toast.message}</p>
             </div>
           </motion.div>
         ) : null}

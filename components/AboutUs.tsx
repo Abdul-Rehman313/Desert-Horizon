@@ -67,17 +67,13 @@ export default function AboutUs() {
                 <p className="text-xs uppercase tracking-[0.22em] text-sand">
                   Projects Delivered
                 </p>
-                <p className="mt-2 font-[var(--font-playfair)] text-3xl">
-                  300+
-                </p>
+                <p className="mt-2 font-[var(--font-playfair)] text-3xl">300+</p>
               </div>
               <div className="rounded-2xl border border-sand/25 bg-gradient-to-br from-white to-[#f7f1e4] p-5 shadow-luxury">
                 <p className="text-xs uppercase tracking-[0.22em] text-charcoal/65">
                   Client Retention
                 </p>
-                <p className="mt-2 font-[var(--font-playfair)] text-3xl text-sand">
-                  92%
-                </p>
+                <p className="mt-2 font-[var(--font-playfair)] text-3xl text-sand">92%</p>
               </div>
             </div>
           </motion.div>

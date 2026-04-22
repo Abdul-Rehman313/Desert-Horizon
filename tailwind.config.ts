@@ -7,14 +7,14 @@ const config: Config = {
       colors: {
         sand: "#C5A358",
         charcoal: "#1A1A1A",
-        offwhite: "#FAFAFA"
+        offwhite: "#FAFAFA",
       },
       boxShadow: {
-        luxury: "0 20px 50px -20px rgba(26, 26, 26, 0.35)"
-      }
-    }
+        luxury: "0 20px 50px -20px rgba(26, 26, 26, 0.35)",
+      },
+    },
   },
-  plugins: []
+  plugins: [],
 };
 
 export default config;
