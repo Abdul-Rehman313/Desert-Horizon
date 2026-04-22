@@ -82,12 +82,12 @@ export default function Services() {
                     </li>
                   ))}
                 </ul>
-                <a
+                {/* <a
                   href="#contact"
                   className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-sand transition group-hover:gap-3"
                 >
                   Learn More <ArrowRight size={16} />
-                </a>
+                </a> */}
               </div>
             </motion.article>
           ))}

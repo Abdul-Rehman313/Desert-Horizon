@@ -38,7 +38,7 @@ export default function AboutUs() {
             <div className="absolute right-4 top-4 rounded-full border border-sand/35 bg-sand/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-sand">
               Since 2003
             </div>
-            <div className="space-y-4 text-sm leading-relaxed text-charcoal/80 sm:text-base">
+            <div className="space-y-5 mt-2 text-sm leading-relaxed text-charcoal/80 sm:text-base">
               {paragraphs.map((text) => (
                 <p key={text}>{text}</p>
               ))}
