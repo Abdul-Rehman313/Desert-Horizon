@@ -13,45 +13,33 @@ type Project = {
 const projects: Project[] = [
   {
     title: "Palm Villa Courtyard",
-    before:
-      "https://images.unsplash.com/photo-1464146072230-91cabc968266?auto=format&fm=webp&q=85&w=1600",
-    after:
-      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fm=webp&q=85&w=1600",
+    before: "/images/webp/villa-a.webp",
+    after: "/images/webp/villa-b.webp",
   },
   {
     title: "Al Barsha Poolscape",
-    before:
-      "https://images.unsplash.com/photo-1560185008-b033106af5c3?auto=format&fm=webp&q=85&w=1600",
-    after:
-      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fm=webp&q=85&w=1600",
+    before: "/images/webp/house-a.webp",
+    after: "/images/webp/house-b.webp",
   },
   {
     title: "Padel Court Compound",
-    before:
-      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fm=webp&q=85&w=1600",
-    after:
-      "https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?auto=format&fm=webp&q=85&w=1600",
+    before: "/images/webp/pedalcourt-a.webp",
+    after: "/images/webp/pedalcourt-b.webp",
   },
   {
     title: "Ajman Garden Upgrade",
-    before:
-      "https://images.unsplash.com/photo-1628624747186-a941c476b7ef?auto=format&fm=webp&q=85&w=1600",
-    after:
-      "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fm=webp&q=85&w=1600",
+    before: "/images/webp/bed-a.webp",
+    after: "/images/webp/bed-b.webp",
   },
   {
     title: "Sharjah Facade Renewal",
-    before:
-      "https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fm=webp&q=85&w=1600",
-    after:
-      "https://images.unsplash.com/photo-1600585154084-4e5fe7c39198?auto=format&fm=webp&q=85&w=1600",
+    before: "/images/webp/building-a.webp",
+    after: "/images/webp/building-b.webp",
   },
   {
     title: "Meydan Outdoor Lounge",
-    before:
-      "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?auto=format&fm=webp&q=85&w=1600",
-    after:
-      "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fm=webp&q=85&w=1600",
+    before: "/images/webp/poolyard-a.webp",
+    after: "/images/webp/poolyard-b.webp",
   },
 ];
 
@@ -97,10 +85,10 @@ function ComparisonCard({ project, index }: { project: Project; index: number })
         </div>
 
         <div className="pointer-events-none absolute left-4 top-4 rounded-md bg-white/70 px-4 py-2 text-sm font-semibold text-charcoal backdrop-blur-sm">
-          Before
+          After
         </div>
         <div className="pointer-events-none absolute right-4 top-4 rounded-md bg-white/70 px-4 py-2 text-sm font-semibold text-charcoal backdrop-blur-sm">
-          After
+          Before
         </div>
 
         <div

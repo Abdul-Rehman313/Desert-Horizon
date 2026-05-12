@@ -112,7 +112,7 @@ export default function Home() {
                 </a>
 
                 <a
-                  href="mailto:info@deserthorizon.ae"
+                  href="mailto:deserthorizoncontracting@gmail.com"
                   className="flex items-start gap-3 rounded-xl border border-sand/30 bg-white/[0.03] p-3 transition hover:bg-white/[0.06]"
                 >
                   <span className="mt-0.5 grid h-9 w-9 place-items-center rounded-full bg-sand/15 text-sand">
@@ -123,7 +123,7 @@ export default function Home() {
                       Email
                     </span>
                     <span className="text-sm text-offwhite/90">
-                      info@deserthorizon.ae
+                      deserthorizoncontracting@gmail.com
                     </span>
                   </span>
                 </a>
