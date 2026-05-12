@@ -12,32 +12,32 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: "Palm Villa Courtyard",
+    title: "Luxurious Villa Metamorphosis", // Modern transformation of a traditional villa
     before: "/images/webp/villa-a.webp",
     after: "/images/webp/villa-b.webp",
   },
   {
-    title: "Al Barsha Poolscape",
+    title: "Modern Oasis & Poolside Living", // Modern structure with Burj Khalifa/skyline view
     before: "/images/webp/house-a.webp",
     after: "/images/webp/house-b.webp",
   },
   {
-    title: "Padel Court Compound",
+    title: "Elite Padel Club Development", // Commercial padel court compound
     before: "/images/webp/pedalcourt-a.webp",
     after: "/images/webp/pedalcourt-b.webp",
   },
   {
-    title: "Ajman Garden Upgrade",
+    title: "Minimalist Master Bedroom Suite", // High-end bedroom interior renovation
     before: "/images/webp/bed-a.webp",
     after: "/images/webp/bed-b.webp",
   },
   {
-    title: "Sharjah Facade Renewal",
+    title: "Premium Residential Facade Overhaul", // Multi-story building renovation
     before: "/images/webp/building-a.webp",
     after: "/images/webp/building-b.webp",
   },
   {
-    title: "Meydan Outdoor Lounge",
+    title: "Modernist Poolside Sanctuary", // Outdoor transformation with infinity pool
     before: "/images/webp/poolyard-a.webp",
     after: "/images/webp/poolyard-b.webp",
   },
